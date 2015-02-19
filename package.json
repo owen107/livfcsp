@@ -1,0 +1,18 @@
+{
+  "name": "livfcsinglepage",
+  "version": "0.0.1",
+  "description": "A Responsive Website that introduces Liverpool FC by customizing Twitter Boostrap Framework",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/owen107/livfcsp.git"
+  },
+  "author": "Owen Xu",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-util": "^2.2.20",
+    "gulp-webserver": "^0.8.1",
+    "gulp-if": "^1.2.4",
+    "gulp-uglify": "^0.3.1",
+    "gulp-minify-html": "^0.1.4"
+  }
+}
