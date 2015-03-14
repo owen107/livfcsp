@@ -55,10 +55,11 @@ header .navbar-default .navbar-nav .active a:hover {
 /**  Navbar Brand **/
 
 header .navbar-brand {
-	background: url(../images/wisdompetlogo.svg);
+	background: url(../images/logo/liverpool-logo.png);
 	background-repeat: no-repeat;
-	background-position: 15px 0;
-	height: auto; 
+	background-position: 0 0;
+	/*height: 160px;*/
+  width: 50px;
 }
 
 header .navbar-brand  h1 {
@@ -270,23 +271,23 @@ and (max-width: 768px) {
   background-color: rgba(239,240,196,.9);
 }
 
-#testimonials #janeh {
-  background: url(../images/testimonial-janeh.jpg) no-repeat center center;
+#more #janeh {
+  background: url(../images/more/national-derby.jpg) no-repeat center center;
   background-size: cover;
 }
 
-#testimonials #johnb {
-  background: url(../images/testimonial-johnb.jpg) no-repeat center center;
+#more #johnb {
+  background: url(../images/more/merseyside-derby.jpg) no-repeat center center;
   background-size: cover;
 }
 
-#testimonials #mcphersons {
-  background: url(../images/testimonial-mcphersons.jpg) no-repeat center center;
+#more #mcphersons {
+  background: url(../images/more/hillsborough.jpg) no-repeat center center;
   background-size: cover;
 }
 
-#testimonials #lorraines {
-  background: url(../images/testimonial-lorraines.jpg) no-repeat center center;
+#more #lorraines {
+  background: url(../images/more/fenway.jpg) no-repeat center center;
   background-size: cover;
 }
 
