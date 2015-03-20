@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Liverpool FC</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/prefixfree.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +26,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#featured"><h1>Liverpool <span class="subhead">Football Club</span></h1></a>
+        <a class="navbar-brand" href="#featured">
+          <h1 id="long-name">Liverpool <span class="subhead">Football Club</span></h1>
+          <h1 id="short-name">L . F . C</h1>
+        </a>
       </div><!-- navbar-header -->
       <div class="collapse navbar-collapse" id="collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -31,6 +38,7 @@
           <li><a href="#honors">Honors</a></li>
           <li><a href="#squad">Squad</a></li>
           <li><a href="#more">More</a></li>
+          <li><a href="#explore">Explore</a></li>
         </ul>        
       </div><!-- collapse navbar-collapse -->
     </div><!-- container -->
@@ -38,15 +46,50 @@
 
   <div class="carousel fade" data-ride="carousel" id="featured">
 
-    <ol class="carousel-indicators">
+    <ol class="carousel-indicators hidden-xs hidden-sm">
     </ol>
 
     <div class="carousel-inner fullheight">
-      <div class="item"><img src="images/carousel/liv-anfield.jpg" alt="Anfield Stadium"></div>
-      <div class="item"><img src="images/carousel/liv-eurofinal05.jpg" alt="2005 European Champion League Final"></div>
-      <div class="item"><img src="images/carousel/liv-thekop.jpg" alt="The Famous Kopites"></div>
-      <div class="item"><img src="images/carousel/liv-legend.jpg" alt="Legend Captain"></div>
-      <div class="item"><img src="images/carousel/liv-teamsquad.jpg" alt="Full Team Squad"></div>      
+      <div class="item">
+        <img src="images/carousel/liv-anfield.jpg" alt="Anfield Stadium">
+        <div class="carousel-caption wow animated slideInLeft" data-wow-delay="0.3s" id="anfield">
+          <h3>Anfield Stadium</h3>
+          <p>Anfield is the home of Liverpool F.C. which has a seating capacity of 45,276.</p>
+          <!-- <a href="http://en.wikipedia.org/wiki/Anfield" class="hidden-xs hidden-sm">Learn More <i class="fa fa-angle-double-right"></i></a> -->
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/carousel/liv-eurofinal05.jpg" alt="2005 European Champion League Final">
+        <div class="carousel-caption wow animated slideInRight" data-wow-delay="0.3s" id="eurofinal">
+          <h3>Miracle of Istanbul</h3>
+          <p>On 25 May 2005, Liverpool won the fifth European Cup at the Atatürk Stadium in Istanbul, Turkey.</p>
+          <!-- <a href="http://en.wikipedia.org/wiki/2005_UEFA_Champions_League_Final" class="hidden-xs hidden-sm"><span>Learn More <i class="fa fa-angle-double-right"></i></span></a> -->
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/carousel/liv-thekop.jpg" alt="The Famous Kopites">
+        <div class="carousel-caption wow animated slideInLeft" data-wow-delay="0.3s" id="kopites">
+          <h3>Famous Kopites</h3>
+          <p>Liverpool fans often refer to themselves as Kopites, a reference to the fans who usually sit on the Kop at Anfield.</p>
+          <!-- <a class="more-info" href="http://en.wikipedia.org/wiki/Liverpool_F.C.#Support" class="hidden-xs hidden-sm"><span>Learn More <i class="fa fa-angle-double-right"></i></span></a> -->
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/carousel/liv-legend.jpg" alt="Legend Captain">
+        <div class="carousel-caption wow animated slideInRight" data-wow-delay="0.3s" id="captain">
+          <h3>Legenary Captain</h3>
+          <p>Legendary Liverpool Captain - Steven Gerrard celebrated his goal in front of famous kopites!</p>
+          <!-- <a class="more-info" href="http://en.wikipedia.org/wiki/Steven_Gerrard" class="hidden-xs hidden-sm"><span>Learn More <i class="fa fa-angle-double-right"></i></span></a> -->
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/carousel/liv-teamsquad.jpg" alt="Full Team Squad">
+        <div class="carousel-caption wow animated slideInRight" data-wow-delay="0.3s" id="fullsquad">
+          <h3>LFC First-team Squad</h3>
+          <p>The 2014 - 15 season Liverpool F.C. current First-team squad.</p>
+          <!-- <a class="more-info" href="http://en.wikipedia.org/wiki/2014%E2%80%9315_Liverpool_F.C._season" class="hidden-xs hidden-sm"><span>Learn More <i class="fa fa-angle-double-right"></i></span></a> -->
+        </div>
+      </div>      
     </div><!-- carousel-inner -->
 
     <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
@@ -59,17 +102,38 @@
 </header>
 
 <div class="main">
-  <div class="page" id="history">
+  <div class="section" id="history">
     <div class="content container">
-      <h2>Liverpool F.C History</h2>
+      <h2 class="wow animated tada">Liverpool F.C History</h2>
       <div class="row">
-        <p class="col-md-5 col-md-offset-1">Liverpool Football Club /ˈlɪvərpuːl/ is a Premier League football club based in Liverpool. The club have won more European trophies than any other English team with five European Cups, three UEFA Cups and three UEFA Super Cups. They have also won eighteen League titles, seven FA Cups and a record eight League Cups, although they are yet to win a Premier League title since its inception in 1992.</p>
-        <p class="col-md-5">Liverpool were founded in 1892 and joined the Football League the following year. They have played at Anfield since its formation. The most successful period in Liverpool's history was the 1970s and '80s when Bill Shankly and Bob Paisley led the club to eleven league titles and seven European trophies.</p>
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+           <p class="wow animated bounceInLeft">Liverpool Football Club is a Premier League football club based in Liverpool. The club have won more European trophies than any other English team with five European Cups, three UEFA Cups and three UEFA Super Cups. They have also won eighteen League titles, seven FA Cups and a record eight League Cups, although they are yet to win a Premier League title since its inception in 1992.</p>
+
+           <p class="wow animated bounceInRight">Liverpool were founded in 1892 and joined the Football League the following year. They have played at Anfield since its formation. The most successful period in Liverpool's history was the 1970s and '80s when Bill Shankly and Bob Paisley led the club to eleven league titles and seven European trophies.</p>
+        </div>
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2" id="history-details">
+           <div class="my-col wow animated fadeInLeft">
+              <h4 class="history-title"><i class="fa fa-soccer-ball-o"></i> Foundation & First Period of Success (1892-1959)</h4>
+              <p>The history of Liverpool Football Club from 1892 to 1959 covers the time from the club's foundation, through their first period of success, to the appointment of Bill Shankly as manager.</p>
+              <a href="http://en.wikipedia.org/wiki/History_of_Liverpool_F.C._(1892%E2%80%931959)" class="read-more">Read More</a>
+           </div>
+           <div class="my-col wow animated fadeInUp">
+              <h4 class="history-title"><i class="fa fa-soccer-ball-o"></i> Most Successful Period in History (1959-1985)</h4>
+              <p>he history of Liverpool Football Club from 1959 to 1985 covers the period from the appointment of Bill Shankly as manager to the club's expulsion from European competition following the Heysel Stadium disaster.</p>
+              <a href="http://en.wikipedia.org/wiki/History_of_Liverpool_F.C._(1959%E2%80%9385)" class="read-more">Read More</a>
+           </div>
+           <div class="my-col wow animated fadeInRight">
+              <h4 class="history-title"><i class="fa fa-soccer-ball-o"></i> Period in Perimer League (1985-Present)</h4>
+              <p>The history of Liverpool Football Club from 1985 to 2014 covers the period from the appointment of Kenny Dalglish as manager, the Hillsborough disaster, and the club's performance in the Premier League.</p>
+              <a href="http://en.wikipedia.org/wiki/History_of_Liverpool_F.C._(1985%E2%80%93present)" class="read-more">Read More</a>
+           </div>
+        </div>
+        
       </div> <!-- row -->
     </div><!-- content container -->
   </div><!-- history page -->
 
-  <div class="page" id="honors">
+  <div class="section" id="honors">
     <div class="content container">
       <h2>LFC Honors</h2>
       <div class="row">
@@ -94,93 +158,92 @@
     </div><!-- content container -->
   </div><!-- honors page -->
 
-  <div class="page" id="squad">
+  <div class="section" id="squad">
     <div class="container-fluid">
       <h2 id="ourstaff">Squad Profiles</h2>
       <div class="row">
+            <div class="player col-lg-4">
+              <div class="row">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+                  <img class="img-circle" src="images/squad/sg/sgerrard.jpg" alt="Photo of Steven Gerrard">
+                </div> <!-- photo -->
 
-        <div class="doctor col-lg-4">
-          <div class="row">
-            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-              <img class="img-circle" src="images/squad/sg/sgerrard.jpg" alt="Photo of Steven Gerrard">
-            </div> <!-- photo -->
+                <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+                  <h3>Steven Gerrard</h3>
+                  <p>Our inspirational captain is one of the most complete footballers in the world. Power, pace, touch and a never-say-die attitude, Stevie G has it all, and rarely have these attributes been more apparent than when he skippered the Reds to 2005 Champions League glory in Istanbul</p>
+                </div> <!-- info -->
+              </div> <!-- inner row -->   
+            </div> <!-- player -->
 
-            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
-              <h3>Steven Gerrard</h3>
-              <p>Our inspirational captain is one of the most complete footballers in the world. Power, pace, touch and a never-say-die attitude, Stevie G has it all, and rarely have these attributes been more apparent than when he skippered the Reds to 2005 Champions League glory in Istanbul</p>
-            </div> <!-- info -->
-          </div> <!-- inner row -->   
-        </div> <!-- doctor -->
+            <div class="player col-lg-4">
+              <div class="row">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+                  <img class="img-circle" src="images/squad/br/brogers.jpg"  alt="Photo of Brendan Rogers">
+                </div> <!-- photo -->
 
-        <div class="doctor col-lg-4">
-          <div class="row">
-            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-              <img class="img-circle" src="images/squad/br/brogers.jpg"  alt="Photo of Brendan Rogers">
-            </div> <!-- photo -->
+                <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+                  <h3>Brendan Rogers</h3>
+                  <p>Rodgers began his tenure at Anfield on June 1 with the aim of returning the club to the heights of English and European football. Last season, Rodgers masterminded 10 months of scintillating performances that carried the Reds to second place, narrowly missing out on a remarkable Premier League title on the final day of the season.</p>
+                </div> <!-- info -->
+              </div> <!-- inner row -->  
+            </div> <!-- player -->
 
-            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
-              <h3>Brendan Rogers</h3>
-              <p>Rodgers began his tenure at Anfield on June 1 with the aim of returning the club to the heights of English and European football. Last season, Rodgers masterminded 10 months of scintillating performances that carried the Reds to second place, narrowly missing out on a remarkable Premier League title on the final day of the season.</p>
-            </div> <!-- info -->
-          </div> <!-- inner row -->  
-        </div> <!-- doctor -->
+            <div class="player col-lg-4">
+              <div class="row">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+                  <img class="img-circle" src="images/squad/jh/jhenderson.jpg" alt="Photo of Jordan Hendenson">
+                </div> <!-- photo -->
 
-        <div class="doctor col-lg-4">
-          <div class="row">
-            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-              <img class="img-circle" src="images/squad/jh/jhenderson.jpg" alt="Photo of Jordan Hendenson">
-            </div> <!-- photo -->
+                <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+                  <h3>Jordan Hendenson</h3>
+                  <p>Jordan Henderson is a box-to-box midfielder who blossomed into a trusted element of the high-intensity football preached by Brendan Rodgers at Liverpool and became the Reds' vice-captain in September 2014 in recognition of his considerable consistency and contribution.</p>
+                </div> <!-- info -->
+              </div> <!-- inner row -->     
+            </div> <!-- player -->   
 
-            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
-              <h3>Jordan Hendenson</h3>
-              <p>Jordan Henderson is a box-to-box midfielder who blossomed into a trusted element of the high-intensity football preached by Brendan Rodgers at Liverpool and became the Reds' vice-captain in September 2014 in recognition of his considerable consistency and contribution.</p>
-            </div> <!-- info -->
-          </div> <!-- inner row -->     
-        </div> <!-- doctor -->   
+            <div class="player col-lg-4">
+              <div class="row">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+                  <img class="img-circle" src="images/squad/rs/rsterling.jpg" alt="Photo of Raheem Sterling">
+                </div> <!-- photo -->
 
-        <div class="doctor col-lg-4">
-          <div class="row">
-            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-              <img class="img-circle" src="images/squad/rs/rsterling.jpg" alt="Photo of Raheem Sterling">
-            </div> <!-- photo -->
+                <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+                  <h3>Raheem Sterling</h3>
+                  <p>Raheem Sterling is one of the most exciting youngsters in English football. Seemingly improving with each passing week, the forward was a catalyst in the Reds' race to second place at the close of 2013-14 and was widely considered one of the better performers during England's failed World Cup challenge in Brazil.</p>
+                </div> <!-- info -->
+              </div> <!-- inner row -->     
+            </div> <!-- player -->   
 
-            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
-              <h3>Raheem Sterling</h3>
-              <p>Raheem Sterling is one of the most exciting youngsters in English football. Seemingly improving with each passing week, the forward was a catalyst in the Reds' race to second place at the close of 2013-14 and was widely considered one of the better performers during England's failed World Cup challenge in Brazil.</p>
-            </div> <!-- info -->
-          </div> <!-- inner row -->     
-        </div> <!-- doctor -->   
+            <div class="player col-lg-4">
+              <div class="row">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+                  <img class="img-circle" src="images/squad/ds/dsturridge.jpg" alt="Photo of Daniel Sturridge">
+                </div> <!-- photo -->
 
-        <div class="doctor col-lg-4">
-          <div class="row">
-            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-              <img class="img-circle" src="images/squad/ds/dsturridge.jpg" alt="Photo of Daniel Sturridge">
-            </div> <!-- photo -->
+                <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+                  <h3>Daniel Sturridge</h3>
+                  <p>Sturridge began the 2014-15 season in trademark fashion, netting the winning goal in an opening-day victory over Southampton at Anfield, and soon reaffirmed his commitment to the Liverpool cause by signing a new long-term deal in October 2014.</p>
+                </div> <!-- info -->
+              </div> <!-- inner row -->     
+            </div> <!-- player -->   
 
-            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
-              <h3>Daniel Sturridge</h3>
-              <p>Sturridge began the 2014-15 season in trademark fashion, netting the winning goal in an opening-day victory over Southampton at Anfield, and soon reaffirmed his commitment to the Liverpool cause by signing a new long-term deal in October 2014.</p>
-            </div> <!-- info -->
-          </div> <!-- inner row -->     
-        </div> <!-- doctor -->   
+            <div class="player col-lg-4">
+              <div class="row">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+                  <img class="img-circle" src="images/squad/pc/pcoutinho.jpg" alt="Photo of Philippe Coutinho">
+                </div> <!-- photo -->
 
-        <div class="doctor col-lg-4">
-          <div class="row">
-            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-              <img class="img-circle" src="images/squad/pc/pcoutinho.jpg" alt="Photo of Philippe Coutinho">
-            </div> <!-- photo -->
-
-            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
-              <h3>Philippe Coutinho</h3>
-              <p>While Liverpool endured a testing start to the 2014-15 campaign, Coutinho's influence over the side grew, especially after Rodgers handed the playmaker a more free, attacking role in a revamped 3-4-3 formation. O3n February 3, 2015, Coutinho reaffirmed his commitment to the cause by signing a new long-term contract at the club.</p>
-            </div> <!-- info -->
-          </div> <!-- inner row -->     
-        </div> <!-- doctor -->              
+                <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+                  <h3>Philippe Coutinho</h3>
+                  <p>While Liverpool endured a testing start to the 2014-15 campaign, Coutinho's influence over the side grew, especially after Rodgers handed the playmaker a more free, attacking role in a revamped 3-4-3 formation. O3n February 3, 2015, Coutinho reaffirmed his commitment to the cause by signing a new long-term contract at the club.</p>
+                </div> <!-- info -->
+              </div> <!-- inner row -->     
+            </div> <!-- player -->            
       </div><!-- row -->
     </div><!-- container -->
-  </div><!-- staff page -->
+  </div><!-- squad page -->
 
-  <div class="page" id="more">
+  <div class="section" id="more">
     <div class="container-fluid">
       <h2>More about Liverpool F.C</h2>
       <div class="row">
@@ -217,7 +280,7 @@
         </blockquote>          
       </div>
     </div><!-- container -->
-  </div><!-- testimonials page -->
+  </div><!-- more page -->
 </div><!-- main -->
 
 <footer>
@@ -240,6 +303,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/grids.min.js"></script>
 <script src="js/myscript.js"></script>
 </body>
 </html>

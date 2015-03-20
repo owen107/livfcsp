@@ -75,7 +75,26 @@ $(function() {
 
 
 	$('.carousel').carousel({
-	    pause: false
+	    interval: false
 	});
+
+    // Initiate the responsive equal height grid plugin
+	$('.player').responsiveEqualHeightGrid();
+
+    // var currentImg = $('.carousel-inner').find('.item');
+    // currentImg.each(function() {
+    // 	if ($(this).hasClass('active')) {
+    // 		new WOW().init();
+    // 	}
+    // });
+
+	//Animation on scroll with wow js 
+    new WOW({
+    	boxClass:     'wow',
+        animateClass: 'animated',
+        offset:       100,
+        mobile:       true
+    }).init();
+    
 
 });

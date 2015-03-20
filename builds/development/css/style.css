@@ -1,16 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Open+Sans:400,300,700,800);
-
 /**  Basic Page CSS **/
 body {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2em;
   font-weight: 300;
   position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 100;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
 	margin: 0;
 }
 
@@ -25,29 +23,43 @@ header .navbar {
 }
 
 header .navbar-default {
-	background-color: transparent;
+	background: linear-gradient(black, transparent);
 	border: none;
 }
 
 header .navbar-default .navbar-nav a {
   color: white;
-  padding: 5px 8px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: 'Dosis', sans-serif;
 }
 
+header .navbar-default .navbar-nav .active a:focus {
+   color: #EEC856;
+   background: transparent;
+}
+
+header .navbar-default .navbar-nav a:focus {
+   color: #fff;
+}
+
+header .navbar-default .navbar-nav .active a,
 header .navbar-default .navbar-nav a:hover {
   color: #EEC856;
 }
 
 header .navbar-default .navbar-nav .active a {
   font-weight: 700;
-  color: #EEC856;
-  background: transparent;
   border-bottom: 4px solid #EEC856;
-  text-shadow: none;
 }
 
 header .navbar-default .navbar-nav .active a:hover {
   color: #E15D5F;
+}
+
+header .navbar-default .navbar-nav .active a,
+header .navbar-default .navbar-nav .active a:hover {
   background: transparent;
   text-shadow: none;
 }
@@ -57,46 +69,66 @@ header .navbar-default .navbar-nav .active a:hover {
 header .navbar-brand {
 	background: url(../images/logo/liverpool-logo.png);
 	background-repeat: no-repeat;
-	background-position: 0 0;
-	/*height: 160px;*/
-  width: 50px;
+	background-position: 10px 0;
+  background-size: 100px;
+	height: 100px;
 }
 
-header .navbar-brand  h1 {
+header .navbar-brand #long-name {
 	color: white;
-	margin: 0;
-	font-size: 1.8em;
-	font-weight: 400;
-	padding-left: 105px;
+  /*color: #EEC856;*/
+	margin-top: 5px;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-left: 90px;
+  text-transform: uppercase;
+}
+
+header .navbar-brand #short-name {
+  display: none;
 }
 
 header .navbar-brand span.subhead {
   display: block;
   font-family: "Roboto Slab", serif;
-  font-size: .6em;
+  font-size: 0.75em;
   font-weight: 100;
+  text-transform: capitalize;
+  color: #EEC856;
 }
 
 /**  Navbar Toggle **/
-header .navbar-toggle {
-  background-color: #279182;
+header .navbar-default .navbar-toggle {
+  background-color: transparent;
+}
+
+header .navbar-default .navbar-toggle:hover,
+header .navbar-default .navbar-toggle:focus {
+  background-color: rgba(211, 23, 30, 0.9);
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: #EEC856;
 }
 
-@media only screen
-and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   header .navbar-collapse.in {
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  header .navbar-default {
+    background: transparent;
   }
 }
 
 /**  nav inbody **/
 
 header .inbody {
-  background: rgba(104,73,49,.9);
+  background: rgba(211, 23, 30, 0.92);
 }
 
 header .navbar.inbody {
@@ -109,16 +141,24 @@ header .navbar.inbody .navbar-nav {
 }
 
 header .inbody .navbar-brand {
-  background-size: 43px;
+  background-size: 40px;
+  height: 40px;
   background-position: top left;
-  margin-top: 5px;
+  margin: 5px 0 6px;
   padding-bottom: 0;
   margin-left: 10px;
 }
 
-header .inbody .navbar-brand h1 {
-  font-size: 1.1em;
-  padding-left: 38px;
+header .inbody .navbar-brand #long-name {
+  display: none;
+}
+
+header .inbody .navbar-brand #short-name {
+  display: block;
+  font-size: 1.2em;
+  padding-left: 32px;
+  color: #EEC856;
+
 }
 
 header .inbody .navbar-brand span.subhead {
@@ -168,39 +208,205 @@ header .inbody .navbar-brand span.subhead {
   height: 100%;
 }
 
+.glyphicon-chevron-right:before,
+.glyphicon-chevron-left:before {
+    color: #EEC856;
+}
+
+.carousel-indicators .active {
+     background-color: #EEC856;
+}
+
+.carousel-indicators li {
+     border-color: #EEC856
+}
+
+.carousel-caption {
+  width: 450px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  position: absolute;
+  right: inherit;
+  text-align: left;
+  text-shadow: none;
+  color: inherit;
+  padding: 23px 25px;
+}
+
+.carousel-caption h3 {
+    color: #EEC856;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.carousel-caption p {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.carousel-caption a {
+    background: #D3171E;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 0.65em;
+    padding: 5px 10px;
+    float: right;
+} 
+
+.carousel-caption a:hover {
+    background: #860207;
+    cursor: pointer;
+}
+
+#anfield {
+    left: 6%;
+    bottom: 15%;
+}
+
+#captain {
+    left: 58%;
+    bottom: 8%;
+}
+
+#eurofinal {
+    left: 58%;
+    bottom: 10%;
+}
+
+#fullsquad {
+    left: 58%;
+    bottom: 11%;
+}
+
+#kopites {
+    left: 7%;
+    bottom: 15%;
+}
+
+@media (max-width: 991px) {
+   .carousel-caption {
+      width: auto;
+      left: 0 !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      padding: 13px 15px;
+      border-radius: 0;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.3em;
+    }
+
+    .carousel-caption p {
+        font-size: 0.75em;
+    }
+}
+
 /**  Page **/
 
-.page {
+.section {
 	padding: 50px 0;
 }
 
-.page h2 {
+.section h2 {
+  color: #EEC856;
 	text-align: center;
 	margin-bottom: 30px;
 }
 
-/**  Page -- Mission **/
-#mission {
-  background-color: #E4D29D;
-  background-image: linear-gradient(to bottom, #EEF08A, #819A2D);
-  border-top: 20px solid rgba(238, 200, 86, .5);
+/**  Page -- History **/
+#history {
+  background-color: rgba(107, 1, 5, 0.8);
+  background-image: linear-gradient(to bottom right, rgba(172,3,9,1), rgba(107,1,5, 0.9));
+  border-top: 20px solid rgba(107, 1, 5, 0.75);
 }
 
-/**  Page -- Services **/
+#history p {
+  color: white;
+  font-size: 0.8em;
+}
 
-.service {
+#history p:first-child:first-letter{
+  color:#EEC856;
+  font-weight: 500;
+  font-size: 1.7em;
+  margin-right: 3px;
+}
+
+.my-col {
+  width: 33.33333%;
+  float: left;
+  padding: 0 8px;
+}
+
+#history-details {
+  margin-top: 20px;
+}
+
+.history-title {
+  color: #EEC856;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.85em;
+  margin-bottom: 10px;
+}
+
+#history-details p {
+  font-size: 0.7em;
+}
+
+.read-more {
+  background: #EEC856;
+  color: rgba(107, 1, 5, 0.8);
+  padding: 5px 8px;
+  border-radius: 100px;
+  border: 2px solid #EEC856;
+  font-size: 0.7em;
+  font-weight: bold;
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.read-more:hover {
+  text-decoration: none;
+  background: transparent;
+  color: #EEC856;
+}
+
+@media (max-width: 749px) {
+   .my-col {
+      width: 100%;
+      float: left;
+      margin-bottom: 25px;
+   }
+
+   .history-title {
+      margin-bottom: 6px;
+   }
+
+   .read-more {
+      margin-top: 10px;
+   }
+}
+
+/**  Page -- Honors **/
+
+#honor {
   margin: 20px 0;
   text-align: center;
 }
 
-#services img.icon {
+#honors img.icon {
   display: block;
   width: 80px;
   margin: 0 auto;
   margin-bottom: 5px;
 }
 
-#services h3 {
+#honors h3 {
   margin-bottom: 10px;
 }
 
@@ -220,22 +426,22 @@ and (max-width: 768px) {
   background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
 }
 
-.doctor {
+.player {
   margin: 10px 0;
 }
 
-.doctor h3 {
+.player h3 {
   font-weight: 600;
   font-size: 1.2em;
   color: #6F4E36;
   padding-bottom: 5px;
 }
 
-.doctor p {
+.player p {
   font-size: .8em;
 }
 
-.doctor img {
+.player img {
   width: 100%;
 }
 
@@ -272,7 +478,7 @@ and (max-width: 768px) {
 }
 
 #more #janeh {
-  background: url(../images/more/national-derby.jpg) no-repeat center center;
+  background: url(../images/more/liv-manu.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -368,6 +574,12 @@ footer .navbar-nav>li a {
   padding-bottom: 0;
   text-decoration: underline;
   color: #EEC856 !important;
+}
+
+/* columns of same height styles */
+.row.borders{
+    display: inline-flex;
+    width: 100%;
 }
 
 
