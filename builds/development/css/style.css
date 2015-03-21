@@ -119,10 +119,6 @@ header .navbar-default .navbar-toggle .icon-bar {
   header .navbar-collapse.in {
     background-color: rgba(0, 0, 0, 0.5);
   }
-
-  header .navbar-default {
-    background: transparent;
-  }
 }
 
 /**  nav inbody **/
@@ -303,7 +299,7 @@ header .inbody .navbar-brand span.subhead {
     }
 }
 
-/**  Page **/
+/**  Section **/
 
 .section {
 	padding: 50px 0;
@@ -315,7 +311,7 @@ header .inbody .navbar-brand span.subhead {
 	margin-bottom: 30px;
 }
 
-/**  Page -- History **/
+/**  Section -- History **/
 #history {
   background-color: rgba(107, 1, 5, 0.8);
   background-image: linear-gradient(to bottom right, rgba(172,3,9,1), rgba(107,1,5, 0.9));
@@ -392,7 +388,7 @@ header .inbody .navbar-brand span.subhead {
    }
 }
 
-/**  Page -- Honors **/
+/**  Section -- Honors **/
 
 #honors {
   margin: 20px 0;
@@ -431,7 +427,7 @@ header .inbody .navbar-brand span.subhead {
 }
 
 
-/**  Page -- Squad **/
+/**  Section -- Squad **/
 
 #squad {
   background-color: rgba(177, 149, 58, 0.8);
@@ -445,6 +441,7 @@ header .inbody .navbar-brand span.subhead {
 
 .player {
   margin: 25px 0;
+  height: 100px;
 }
 
 .player h3 {
@@ -540,103 +537,127 @@ header .inbody .navbar-brand span.subhead {
     border-top-color: #006120;
 }
 
-/**  Page -- More **/
+/**  Section -- More **/
 
-#testimonials {
+#more {
   padding: 0;
 }
 
-#testimonials h2 {
-  display: none;
-}
-
-#testimonials blockquote {
-  margin: 0;
-  padding: 0;
-  border-left: none;
-  min-height: 500px;
+#more .wrapper {
   position: relative;
+  min-height: 500px;
+  display: block;
+  overflow: hidden;
 }
 
-#testimonials blockquote .quote {
-  background-color: rgba(255,255,255,.6);
-  padding: 20px 5%;
-  position: absolute;
-  bottom: 0;
-  width: 75%;
-  font-weight: 400;
-  border-radius: 0 50px 0 0;
-}
-
-#testimonials blockquote .quote:hover {
-  background-color: rgba(239,240,196,.9);
-}
-
-#more #janeh {
+#more #rivalry {
   background: url(../images/more/liv-manu.jpg) no-repeat center center;
   background-size: cover;
 }
 
-#more #johnb {
+#more #merseyside {
   background: url(../images/more/merseyside-derby.jpg) no-repeat center center;
   background-size: cover;
 }
 
-#more #mcphersons {
+#more #disaster {
   background: url(../images/more/hillsborough.jpg) no-repeat center center;
   background-size: cover;
 }
 
-#more #lorraines {
-  background: url(../images/more/fenway.jpg) no-repeat center center;
+#more #ownership {
+  background: url(../images/more/fenway.jpg) no-repeat 5% center;
   background-size: cover;
 }
 
-#testimonials .quote {
-  font-size: 1.2em;
+#more #rivalry,
+#more #merseyside,
+#more #disaster,
+#more #ownership {
+  padding: 0;
+}
+
+#more .desc {
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  color: #fff;
+  padding: 4%;
   line-height: 110%;
-  font-weight: 400;
+  transition: all .2s ease-out 0s;
+  bottom: -73%;
 }
 
+#more .desc:hover {
+  cursor: pointer;
+}
 
-#testimonials .quote .more, #testimonials .customer {
+#more .title {
+  color: #EEC856;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#more .content {
+  font-size: 0.75em;
+  line-height: 100%;
+}
+
+#more .action {
+  color: #fff;
+  font-size: 15px;
+  display: block;
+  width: 80px;
   opacity: 0;
-  font-size: 0;
-  line-height: 0;
-  padding-top: 10px;
+  text-align: center;
+  margin-left: -100px;
+  padding: 6px 10px;
+  margin-top: 10px;
+  background: rgba(211, 23, 30, 0.92);
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-
-#testimonials .quote:hover .more {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
-  display: block;
-  opacity: 1;
-  font-size: .8em;
-  line-height: 120%;
+#more .action:hover {
+  text-decoration: none;
+  background: rgba(107, 1, 5, 0.92);
 }
 
-#testimonials .quote:hover .customer {
-  display: block;
-  font-size: .7em;
-  text-align: right;
+@media (max-width: 1200px) {
+  #more .desc {
+    bottom: -75%;
+  }
 }
 
-#testimonials .quote .intro::after {
-  content: '...';
-}
+/**  Section -- Explore **/
 
-#testimonials .quote:hover .intro::after {
-  content: '';
+#explore {
+  background: url(../images/logo/explore-liv2.png) no-repeat 0 5% / 100px 240px, linear-gradient(to bottom right, transparent, #EEC856);
+  /*height: 500px;*/
 }
 
 /**  Footer **/
 
 footer {
-  background: #586D74;
+  background: #000;
   color: white;
   font-size: .8em;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 30px 0;
+  position: relative;
+}
+
+#footer-logo {
+  position: absolute;
+  width: 110px;
+  top: -60px;
+}
+
+footer p {
+  padding-left: 120px;
 }
 
 footer a {
@@ -671,10 +692,5 @@ footer .navbar-nav>li a {
   color: #EEC856 !important;
 }
 
-/* columns of same height styles */
-.row.borders{
-    display: inline-flex;
-    width: 100%;
-}
 
 

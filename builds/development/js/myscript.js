@@ -73,6 +73,31 @@ $(function() {
 		$('#featured ol').append(insertText);
 	};
 
+    // Animate effect when hovering more info sections
+	$('#more .desc').hover(function() {
+		
+		$(this).animate({
+			'bottom': 0 
+		}, 'fast', 'linear', function() {
+
+			// initiate the more info action after setting the bottom property
+			$(this).find('.action').animate({
+				'opacity': 1,
+				'marginLeft': '10px'
+			}, 'slow', 'swing');
+		});	
+	}, function() {
+		$(this).animate({
+			'bottom': '-73%'
+		}, 'fast', 'linear', function() {
+
+			 // initiate the more info action after setting the bottom property
+			 $(this).find('.action').animate({
+				'opacity': 0,
+				'marginLeft': '-100px'
+			}, 'slow', 'swing');
+		});
+	});
 
 	$('.carousel').carousel({
 	    interval: false
@@ -80,13 +105,6 @@ $(function() {
 
     // Initiate the responsive equal height grid plugin
 	$('.player').responsiveEqualHeightGrid();
-
-    // var currentImg = $('.carousel-inner').find('.item');
-    // currentImg.each(function() {
-    // 	if ($(this).hasClass('active')) {
-    // 		new WOW().init();
-    // 	}
-    // });
 
 	//Animation on scroll with wow js 
     new WOW({
