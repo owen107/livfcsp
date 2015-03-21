@@ -376,7 +376,7 @@ header .inbody .navbar-brand span.subhead {
   color: #EEC856;
 }
 
-@media (max-width: 749px) {
+@media (max-width: 740px) {
    .my-col {
       width: 100%;
       float: left;
@@ -394,58 +394,153 @@ header .inbody .navbar-brand span.subhead {
 
 /**  Page -- Honors **/
 
-#honor {
+#honors {
   margin: 20px 0;
   text-align: center;
 }
 
+.honor {
+  margin-bottom: 20px;
+}
+
 #honors img.icon {
   display: block;
-  width: 80px;
+  width: auto;
   margin: 0 auto;
-  margin-bottom: 5px;
+  border: 2px solid #EEC856;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin-bottom: 15px;
 }
 
 #honors h3 {
   margin-bottom: 10px;
+  color: rgba(107, 1, 5, 0.8);
+  font-size: 1.2em;
 }
 
-@media only screen 
-and (min-width: 450px)
-and (max-width: 768px) {
-  .service p {
+#honors p {
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+  .honor p {
     padding: 0 20%;
   }
 }
 
 
-/**  Page -- Staff **/
+/**  Page -- Squad **/
 
-#staff {
-  background-color: #E4D29D;
-  background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+#squad {
+  background-color: rgba(177, 149, 58, 0.8);
+  /*background-image: linear-gradient(45deg, rgba(177, 149, 58, 0.4), #8d772e);*/
+  background-image: linear-gradient(45deg, #eee, #9f9f9f);
+}
+
+#livsquad {
+   text-shadow: 2px 2px 2px #515151;
 }
 
 .player {
-  margin: 10px 0;
+  margin: 25px 0;
 }
 
 .player h3 {
   font-weight: 600;
-  font-size: 1.2em;
-  color: #6F4E36;
-  padding-bottom: 5px;
+  font-size: 1.1em;
+  color: rgba(211, 23, 30, 0.92);
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 1px #515151;
 }
 
 .player p {
-  font-size: .8em;
+  font-size: 0.65em;
+  color: #5e5e5e;
+  font-weight: 500;
 }
 
 .player img {
   width: 100%;
 }
 
-/**  Page -- Testimonials **/
+.image-wrapper:hover{
+    top: -5px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.5);
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    top: 0px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.4);
+    transition: top 0.15s linear;
+}
+
+.image-overlay {
+    position: absolute;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.image-overlay i {
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    color: #fff;
+    font-size: 2em;
+    width: 100%;
+    transition: all 0.3s ease-out; 
+}
+
+.image-wrapper:hover .image-overlay{
+    opacity: 1;
+}
+
+.full-profile {
+  background: rgba(211, 23, 30, 0.92);
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.65em;
+  width: 100px;
+  display: block;
+  text-align: center;
+  margin: 0 auto; 
+  font-family: "Roboto Slab", serif;
+}
+
+.full-profile:hover {
+   background: rgba(107, 1, 5, 0.8);
+   color: #fff;
+   text-decoration: none;
+}
+
+.tooltip {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.tooltip.top .tooltip-inner {
+    background-color:  #006120;
+    padding: 3px 6px;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px #515151;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #006120;
+}
+
+/**  Page -- More **/
 
 #testimonials {
   padding: 0;

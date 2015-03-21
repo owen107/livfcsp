@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/lightbox.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/prefixfree.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -112,17 +113,17 @@
            <p class="wow animated bounceInRight">Liverpool were founded in 1892 and joined the Football League the following year. They have played at Anfield since its formation. The most successful period in Liverpool's history was the 1970s and '80s when Bill Shankly and Bob Paisley led the club to eleven league titles and seven European trophies.</p>
         </div>
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2" id="history-details">
-           <div class="my-col wow animated fadeInLeft">
+           <div class="my-col wow animated fadeInLeftBig">
               <h4 class="history-title"><i class="fa fa-soccer-ball-o"></i> Foundation & First Period of Success (1892-1959)</h4>
               <p>The history of Liverpool Football Club from 1892 to 1959 covers the time from the club's foundation, through their first period of success, to the appointment of Bill Shankly as manager.</p>
               <a href="http://en.wikipedia.org/wiki/History_of_Liverpool_F.C._(1892%E2%80%931959)" class="read-more">Read More</a>
            </div>
-           <div class="my-col wow animated fadeInUp">
+           <div class="my-col wow animated fadeInUpBig">
               <h4 class="history-title"><i class="fa fa-soccer-ball-o"></i> Most Successful Period in History (1959-1985)</h4>
               <p>he history of Liverpool Football Club from 1959 to 1985 covers the period from the appointment of Bill Shankly as manager to the club's expulsion from European competition following the Heysel Stadium disaster.</p>
               <a href="http://en.wikipedia.org/wiki/History_of_Liverpool_F.C._(1959%E2%80%9385)" class="read-more">Read More</a>
            </div>
-           <div class="my-col wow animated fadeInRight">
+           <div class="my-col wow animated fadeInRightBig">
               <h4 class="history-title"><i class="fa fa-soccer-ball-o"></i> Period in Perimer League (1985-Present)</h4>
               <p>The history of Liverpool Football Club from 1985 to 2014 covers the period from the appointment of Kenny Dalglish as manager, the Hillsborough disaster, and the club's performance in the Premier League.</p>
               <a href="http://en.wikipedia.org/wiki/History_of_Liverpool_F.C._(1985%E2%80%93present)" class="read-more">Read More</a>
@@ -131,117 +132,179 @@
         
       </div> <!-- row -->
     </div><!-- content container -->
-  </div><!-- history page -->
+  </div> <!-- history section -->
 
   <div class="section" id="honors">
     <div class="content container">
-      <h2>LFC Honors</h2>
+      <h2 class="wow animated shake">Liverpool F.C. Honors</h2>
       <div class="row">
-        <article class="service col-md-4 col-sm-6 col-xs-12">
+        <article class="honor col-md-4 col-xs-12 wow animated slideInLeft">
           <img class="icon" src="images/honors/liv-tropy-domestics.png" alt="Honors of Domestics">
           <h3>Domestic</h3>
           <p>Liverpool F.C have won eighteen League titles (Football League First Division), seven FA Cups and a record eight League Cups</p>
         </article>
 
-        <article class="service col-md-4 col-sm-6 col-xs-12">
+        <article class="honor col-md-4 col-xs-12 wow animated slideInDown">
           <img class="icon" src="images/honors/liv-tropy-european.png" alt="Honors of European">
           <h3>European</h3>
           <p>Liverpool F.C have won more European trophies than any other English team with five European Cups, three UEFA Cups and three UEFA Super Cups</p>
         </article>
 
-        <article class="service col-md-4 col-sm-6 col-xs-12">
+        <article class="honor col-md-4 col-xs-12 wow animated slideInRight">
           <img class="icon" src="images/honors/doubles-&-trebles.png" alt="Doubles & Trebles">
-          <h3>Doubles and trebles</h3>
-          <p>Liverpool F.C have won achieved 7 major Doubles (1972–73, 1975–76, 1976–77, 1981-82, 1980–81, 1982-83, 1985-86) and two Trebles in history (1983-84, 2000-01)</p>
+          <h3>Doubles and Trebles</h3>
+          <p>Liverpool F.C have won achieved 8 major Doubles (1972–73, 1975–76, 1976–77, 1980–81, 1981-82, 1982-83, 1983-84, 1985-86) and two Trebles in history (1983-84, 2000-01)</p>
         </article>
       </div><!-- row -->   
     </div><!-- content container -->
-  </div><!-- honors page -->
+  </div> <!-- honors section -->
 
   <div class="section" id="squad">
     <div class="container-fluid">
-      <h2 id="ourstaff">Squad Profiles</h2>
+      <h2 id="livsquad" class="wow animated wobble">Liverpool F.C. Squad</h2>
       <div class="row">
-            <div class="player col-lg-4">
+            <div class="player col-lg-4 col-md-6 wow animated fadeInLeft">
               <div class="row">
-                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-                  <img class="img-circle" src="images/squad/sg/sgerrard.jpg" alt="Photo of Steven Gerrard">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-4 col-lg-4 col-lg-offset-0">
+                  <a href="images/squad/sg/sg1.jpg" data-lightbox="sg">
+                    <div class="image-wrapper" data-toggle="tooltip" data-placement="top" title="Legendary Captain">
+                       <img class="img-circle" src="images/squad/sg/sgerrard.jpg" alt="Photo of Steven Gerrard">
+                       <div class="image-overlay img-circle"><i class="fa fa-photo"></i></div>
+                    </div>
+                  </a>
+                  <a href="images/squad/sg/sg2.jpg" data-lightbox="sg">
+                  <a href="images/squad/sg/sg3.jpg" data-lightbox="sg">
+                  <a href="images/squad/sg/sg4.jpg" data-lightbox="sg">
+                  <a href="images/squad/sg/sg5.jpg" data-lightbox="sg">
+                  <a href="http://www.liverpoolfc.com/team/first-team/player/steven-gerrard" class="full-profile hidden-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- photo -->
 
                 <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
                   <h3>Steven Gerrard</h3>
                   <p>Our inspirational captain is one of the most complete footballers in the world. Power, pace, touch and a never-say-die attitude, Stevie G has it all, and rarely have these attributes been more apparent than when he skippered the Reds to 2005 Champions League glory in Istanbul</p>
+                  <a href="http://www.liverpoolfc.com/team/first-team/player/steven-gerrard" class="full-profile visible-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- info -->
               </div> <!-- inner row -->   
             </div> <!-- player -->
 
-            <div class="player col-lg-4">
+            <div class="player col-lg-4 col-md-6 wow animated fadeInDown">
               <div class="row">
-                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-                  <img class="img-circle" src="images/squad/br/brogers.jpg"  alt="Photo of Brendan Rogers">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-4 col-lg-4 col-lg-offset-0">
+                  <a href="images/squad/br/br1.jpg" data-lightbox="br">
+                    <div class="image-wrapper" data-toggle="tooltip" data-placement="top" title="Mastermind">
+                        <img class="img-circle" src="images/squad/br/brogers.jpg"  alt="Photo of Brendan Rogers">
+                        <div class="image-overlay img-circle"><i class="fa fa-photo"></i></div>
+                    </div>
+                  </a>
+                  <a href="images/squad/br/br2.jpg" data-lightbox="br"></a>
+                  <a href="images/squad/br/br3.jpg" data-lightbox="br"></a>
+                  <a href="images/squad/br/br4.jpg" data-lightbox="br"></a>
+                  <a href="http://www.liverpoolfc.com/team/first-team/staff/brendan-rodgers" class="full-profile hidden-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- photo -->
 
                 <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
                   <h3>Brendan Rogers</h3>
                   <p>Rodgers began his tenure at Anfield on June 1 with the aim of returning the club to the heights of English and European football. Last season, Rodgers masterminded 10 months of scintillating performances that carried the Reds to second place, narrowly missing out on a remarkable Premier League title on the final day of the season.</p>
+                  <a href="http://www.liverpoolfc.com/team/first-team/staff/brendan-rodgers" class="full-profile visible-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- info -->
               </div> <!-- inner row -->  
             </div> <!-- player -->
 
-            <div class="player col-lg-4">
+            <div class="player col-lg-4 col-md-6 wow animated fadeInRight">
               <div class="row">
-                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-                  <img class="img-circle" src="images/squad/jh/jhenderson.jpg" alt="Photo of Jordan Hendenson">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-4 col-lg-4 col-lg-offset-0">
+                  <a href="images/squad/jh/jh1.jpg" data-lightbox="jh">
+                    <div class="image-wrapper" data-toggle="tooltip" data-placement="top" title="Vice Captain">
+                        <img class="img-circle" src="images/squad/jh/jhenderson.jpg" alt="Photo of Jordan Hendenson">
+                        <div class="image-overlay img-circle"><i class="fa fa-photo"></i></div>
+                    </div>
+                  </a>
+                  <a href="images/squad/jh/jh2.jpeg" data-lightbox="jh"></a>
+                  <a href="images/squad/jh/jh3.jpg" data-lightbox="jh"></a>
+                  <a href="images/squad/jh/jh4.jpg" data-lightbox="jh"></a>
+                  <a href="http://www.liverpoolfc.com/team/first-team/player/jordan-henderson" class="full-profile hidden-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- photo -->
 
                 <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
                   <h3>Jordan Hendenson</h3>
                   <p>Jordan Henderson is a box-to-box midfielder who blossomed into a trusted element of the high-intensity football preached by Brendan Rodgers at Liverpool and became the Reds' vice-captain in September 2014 in recognition of his considerable consistency and contribution.</p>
+                  <a href="http://www.liverpoolfc.com/team/first-team/player/jordan-henderson" class="full-profile visible-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- info -->
               </div> <!-- inner row -->     
             </div> <!-- player -->   
 
-            <div class="player col-lg-4">
+            <div class="player col-lg-4 col-md-6 wow animated fadeInLeft">
               <div class="row">
-                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-                  <img class="img-circle" src="images/squad/rs/rsterling.jpg" alt="Photo of Raheem Sterling">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-4 col-lg-4 col-lg-offset-0">
+                  <a href="images/squad/rs/rs1.jpg" data-lightbox="rs">
+                    <div class="image-wrapper" data-toggle="tooltip" data-placement="top" title="Golden Boy">
+                        <img class="img-circle" src="images/squad/rs/rsterling.jpg" alt="Photo of Raheem Sterling">
+                        <div class="image-overlay img-circle"><i class="fa fa-photo"></i></div>
+                    </div>
+                  </a>
+                  <a href="images/squad/rs/rs2.jpg" data-lightbox="rs"></a>
+                  <a href="images/squad/rs/rs3.jpg" data-lightbox="rs"></a>
+                  <a href="images/squad/rs/rs4.jpg" data-lightbox="rs"></a>
+                  <a href="http://www.liverpoolfc.com/team/first-team/player/raheem-sterling" class="full-profile hidden-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- photo -->
 
                 <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
                   <h3>Raheem Sterling</h3>
                   <p>Raheem Sterling is one of the most exciting youngsters in English football. Seemingly improving with each passing week, the forward was a catalyst in the Reds' race to second place at the close of 2013-14 and was widely considered one of the better performers during England's failed World Cup challenge in Brazil.</p>
+                  <a href="http://www.liverpoolfc.com/team/first-team/player/raheem-sterling" class="full-profile visible-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- info -->
               </div> <!-- inner row -->     
             </div> <!-- player -->   
 
-            <div class="player col-lg-4">
+            <div class="player col-lg-4 col-md-6 wow animated fadeInUp">
               <div class="row">
-                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-                  <img class="img-circle" src="images/squad/ds/dsturridge.jpg" alt="Photo of Daniel Sturridge">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-4 col-lg-4 col-lg-offset-0">
+                  <a href="images/squad/ds/ds1.jpg" data-lightbox="ds">
+                    <div class="image-wrapper" data-toggle="tooltip" data-placement="top" title="Main Striker">
+                        <img class="img-circle" src="images/squad/ds/dsturridge.jpg" alt="Photo of Daniel Sturridge">
+                        <div class="image-overlay img-circle"><i class="fa fa-photo"></i></div>
+                    </div>
+                  </a>
+                  <a href="images/squad/ds/ds2.jpeg" data-lightbox="ds"></a>
+                  <a href="images/squad/ds/ds3.jpg" data-lightbox="ds"></a>
+                  <a href="images/squad/ds/ds4.jpg" data-lightbox="ds"></a>
+                  <a href="http://www.liverpoolfc.com/team/first-team/player/daniel-sturridge" class="full-profile hidden-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- photo -->
 
                 <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
                   <h3>Daniel Sturridge</h3>
                   <p>Sturridge began the 2014-15 season in trademark fashion, netting the winning goal in an opening-day victory over Southampton at Anfield, and soon reaffirmed his commitment to the Liverpool cause by signing a new long-term deal in October 2014.</p>
+                  <a href="http://www.liverpoolfc.com/team/first-team/player/daniel-sturridge" class="full-profile visible-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- info -->
               </div> <!-- inner row -->     
             </div> <!-- player -->   
 
-            <div class="player col-lg-4">
+            <div class="player col-lg-4 col-md-6 wow animated fadeInRight">
               <div class="row">
-                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-                  <img class="img-circle" src="images/squad/pc/pcoutinho.jpg" alt="Photo of Philippe Coutinho">
+                <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-4 col-lg-4 col-lg-offset-0">
+                  <a href="images/squad/pc/pc1.jpg" data-lightbox="pc">
+                    <div class="image-wrapper" data-toggle="tooltip" data-placement="top" title="The Magican">
+                        <img class="img-circle" src="images/squad/pc/pcoutinho.jpg" alt="Photo of Philippe Coutinho">
+                        <div class="image-overlay img-circle"><i class="fa fa-photo"></i></div>
+                    </div>
+                  </a>
+                  <a href="images/squad/pc/pc2.jpg" data-lightbox="pc"></a>
+                  <a href="images/squad/pc/pc3.jpg" data-lightbox="pc"></a>
+                  <a href="images/squad/pc/pc4.jpg" data-lightbox="pc"></a>
+                  <a href="images/squad/pc/pc5.jpg" data-lightbox="pc"></a>
+                  <a href="http://www.liverpoolfc.com/team/first-team/player/philippe-coutinho" class="full-profile hidden-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- photo -->
 
                 <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
                   <h3>Philippe Coutinho</h3>
                   <p>While Liverpool endured a testing start to the 2014-15 campaign, Coutinho's influence over the side grew, especially after Rodgers handed the playmaker a more free, attacking role in a revamped 3-4-3 formation. O3n February 3, 2015, Coutinho reaffirmed his commitment to the cause by signing a new long-term contract at the club.</p>
+                  <a href="http://www.liverpoolfc.com/team/first-team/player/philippe-coutinho" class="full-profile visible-xs"><i class="fa fa-user"></i> Full Profile</a>
                 </div> <!-- info -->
               </div> <!-- inner row -->     
             </div> <!-- player -->            
       </div><!-- row -->
     </div><!-- container -->
-  </div><!-- squad page -->
+  </div> <!-- squad section -->
 
   <div class="section" id="more">
     <div class="container-fluid">
@@ -280,7 +343,10 @@
         </blockquote>          
       </div>
     </div><!-- container -->
-  </div><!-- more page -->
+  </div> <!-- more section -->
+
+  <div class="section" id="explore">
+  </div> <!-- explore section -->
 </div><!-- main -->
 
 <footer>
@@ -304,6 +370,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/lightbox.min.js"></script>
 <script src="js/grids.min.js"></script>
 <script src="js/myscript.js"></script>
 </body>

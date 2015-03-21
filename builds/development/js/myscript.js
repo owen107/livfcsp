@@ -95,6 +95,8 @@ $(function() {
         offset:       100,
         mobile:       true
     }).init();
+
+    $("[data-toggle=tooltip]").tooltip();
     
 
 });
