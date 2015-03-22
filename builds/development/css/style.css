@@ -151,10 +151,10 @@ header .inbody .navbar-brand #long-name {
 
 header .inbody .navbar-brand #short-name {
   display: block;
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding-left: 32px;
   color: #EEC856;
-
+  font-family: "Roboto Slab", serif;
 }
 
 header .inbody .navbar-brand span.subhead {
@@ -537,6 +537,19 @@ header .inbody .navbar-brand span.subhead {
     border-top-color: #006120;
 }
 
+#full-profiles {
+    text-transform: uppercase;
+    font-size: 0.95em;
+    margin-right: 20px;
+    text-shadow: 1px 1px 1px #515151;
+    text-align: center;
+    font-weight: bold;
+}
+
+#full-profiles a {
+    color: #006120;
+}
+
 /**  Section -- More **/
 
 #more {
@@ -636,8 +649,52 @@ header .inbody .navbar-brand span.subhead {
 /**  Section -- Explore **/
 
 #explore {
-  background: url(../images/logo/explore-liv2.png) no-repeat 0 5% / 100px 240px, linear-gradient(to bottom right, transparent, #EEC856);
-  /*height: 500px;*/
+  background: url(../images/logo/explore-liv.png) no-repeat 2% 5% / 150px 360px, linear-gradient(to bottom right, transparent, #EEC856);
+  padding-bottom: 10px;
+}
+
+#explore ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#explore h3 {
+  color: rgba(211, 23, 30, 1);
+  margin-bottom: 10px;
+}
+
+#explore a:hover {
+  text-decoration: none;
+}
+
+#explore li {
+  font-size: 0.7em;
+}
+
+#explore li a {
+  color: #878787;
+  font-weight: 500;
+}
+
+#explore li a:hover {
+  text-decoration: underline;
+}
+
+#explore i {
+  color: rgba(211, 23, 30, 1);
+}
+
+#premier-league {
+  width: 120px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  #explore {
+    background: url(../images/logo/explore-liv.png) no-repeat 0% 2% / 100px 240px, linear-gradient(to bottom right, transparent, #EEC856);
+    padding-bottom: 40px; 
+  }
+
 }
 
 /**  Footer **/
@@ -658,39 +715,98 @@ footer {
 
 footer p {
   padding-left: 120px;
+  font-size: 0.9em;
+}
+
+footer span {
+  color: #EEC856;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+footer li {
+  display: inline-block;
 }
 
 footer a {
-  color: #E0E6AE;
+  display: inline-block;
+  height: 40px;
+  margin: 0;
+  width: 40px;
 }
 
-footer a:hover {
-  color: #EEC856 !important;
+footer .follow-facebook {
+  background: transparent url(../images/social/facebook-icon.png) 0 0 no-repeat;
 }
 
-footer .phone {
-  font-size: 1.4em;
-  font-weight: 700;
-  color: #E0E6AE;
+footer .follow-twitter {
+  background: transparent url(../images/social/twitter-icon.png) 0 0 no-repeat;
 }
 
-footer .navbar {
-  margin-bottom: 0;
-  min-height: 0;
+footer .follow-googleplus {
+  background: transparent url(../images/social/googleplus-icon.png) 0 0 no-repeat;
 }
 
-footer .navbar-default {
-  background-color: transparent;
-  border: none;
-  margin-right: 40px;
+footer .follow-youtube {
+  background: transparent url(../images/social/youtube-icon.png) 0 0 no-repeat;
 }
 
-footer .navbar-nav>li a {
-  padding-top: 0;
-  padding-bottom: 0;
-  text-decoration: underline;
-  color: #EEC856 !important;
+footer .follow-instagram {
+  background: transparent url(../images/social/instagram-icon.png) 0 0 no-repeat;
 }
+
+footer .follow-pinterest {
+  background: transparent url(../images/social/pinterest-icon.png) 0 0 no-repeat;
+}
+
+@media (max-width: 320px) {
+  #footer-logo {
+    position: absolute;
+    width: 100px;
+    top: -60px;
+  }
+
+  footer p {
+    padding-left: 100px;
+    font-size: 0.8em;
+  }
+
+  footer ul {
+    margin-top: 10px;
+  }
+}
+
+/**  Back to Top **/
+
+.scrollToTop{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0px;
+    right: 1px;
+    z-index: 999999;
+    display: none;
+    background: rgba(211, 23, 30, 1);
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+.scrollToTop:hover{
+    text-decoration: none;
+    opacity: 1;
+    color: #fff !important;
+}
+
 
 
 
